@@ -1,0 +1,19 @@
+import React from 'react';
+import { SvgXml } from 'react-native-svg';
+
+const xml = `<svg viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg"><g id="Menu Dots 2">
+<g id="Vector">
+<path d="M11.5 6.70833C10.4415 6.70833 9.58333 5.85021 9.58333 4.79167C9.58333 3.73312 10.4415 2.875 11.5 2.875C12.5585 2.875 13.4167 3.73312 13.4167 4.79167C13.4167 5.85021 12.5585 6.70833 11.5 6.70833Z" fill="white"/>
+<path d="M11.5 13.4167C10.4415 13.4167 9.58333 12.5585 9.58333 11.5C9.58333 10.4415 10.4415 9.58333 11.5 9.58333C12.5585 9.58333 13.4167 10.4415 13.4167 11.5C13.4167 12.5585 12.5585 13.4167 11.5 13.4167Z" fill="white"/>
+<path d="M11.5 20.125C10.4415 20.125 9.58333 19.2669 9.58333 18.2083C9.58333 17.1498 10.4415 16.2917 11.5 16.2917C12.5585 16.2917 13.4167 17.1498 13.4167 18.2083C13.4167 19.2669 12.5585 20.125 11.5 20.125Z" fill="white"/>
+</g>
+</g></svg>`;
+
+type Props = {
+  size?: number;
+  style?: object;
+};
+
+export function MenuDotsIcon({ size = 24, style }: Props) {
+  return <SvgXml xml={xml} width={size} height={size} style={style} />;
+}
